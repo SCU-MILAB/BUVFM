@@ -79,10 +79,10 @@ notes:
     text: These authors contributed equally to this work
 links:
   - name: Code
-    url: https://github.com/RomanHauksson/academic-project-astro-template
+    url: http://www.machineilab.org/
     icon: ri:github-line
   - name: arXiv
-    url: https://github.com/RomanHauksson/academic-project-astro-template
+    url: http://www.machineilab.org/
     icon: academicons:arxiv
   - name: DEMO
     url: http://192.168.7.202:9530/
@@ -117,6 +117,10 @@ import outside from "./assets/outside.mp4";
 import dogsDiffc from "./assets/dogs-diffc.png"
 import dogsTrue from "./assets/dogs-true.png"
 import dogsMsillm from "@/assets/dogs-msillm.jpg"
+import fig1 from "./assets/fig1.png"
+import fig2 from "./assets/fig2.png"
+import fig3 from "./assets/fig3.png"
+import arch from "./assets/arch.png"
 
 {/* <Video src={outside} /> */}
 
@@ -145,6 +149,15 @@ These results demonstrate that **AIBS holds great promise for large-scale breast
 
 ---
 
+## Study Design and AI Evaluation Workflow
+
+<Wide>
+<Picture src={fig1} alt="Overview of study design and AI evaluation workflow" />
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Overview of study design and AI evaluation workflow. a, b, Participant demographics and study cohorts across screening centers. c, Self-supervised pre-training framework (nmODE-JEPA) using a context encoder to predict latent features from masked regions. d, Real-time AI pipeline for ultrasound videos, enabling continuous lesion localization and dynamic risk stratification (low, mid, high-risk). e, Scanning quality control validated via expert scoring of volunteer scans by physicians and non-physicians. f, Retrospective internal (3 sites, n = 790) and external (4 sites, n = 1, 080) validation of diagnostic accuracy. g, Crossover study (500 videos) evaluating 16 readers with and without AI (4-week washout) to assess diagnostic performance. h, Prospective real-world validation across 23 sites (n = 11, 485), demonstrating clinical robustness and generalizability.</p>
+</Wide>
+
+---
+
 ## The Three-Stage Architecture
 
 
@@ -166,7 +179,10 @@ AIBS reconciles real-time responsiveness with high-precision diagnostic requirem
 The system adopts an **Edge-Cloud collaboration**, ensuring real-time response at the front-end and expert-level analysis at the back-end.
 
 
-{/* <Figure src={dogsTrue} caption="Architecture of the nmODE-VJEPA Foundation Model." /> */}
+<Wide>
+<Picture src={arch} alt="Model Architecture" />
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Model Architecture. The framework comprises self-supervised pre-training (left) and downstream clinical adaptation (right). The foundation model is pre-trained via video contrastive learning on a large-scale unlabeled dataset (&gt;80,000 videos, &gt;400,000 images). It integrates a 3D convolution encoder, a momentum-updated teacher-student Vision Transformer (ViT), and an nmODE predictor to learn robust spatiotemporal representations optimized by content and prediction losses. Through distillation or fine-tuning, the model adapts to three progressive stages: Stage I (Image-based filtering) leverages Mobile-ODE and YOLO-11 for frame validation and lesion detection; Stage II (Video-based filtering) utilizes ResNet50 and nmODE to model temporal evolution for video-level lesion filtering; Stage III (Risk stratification) applies fully supervised fine-tuning on labeled datasets to classify lesion severity into Low, Mid, and High clinical risk categories.</p>
+</Wide>
 
 ---
 
@@ -209,10 +225,15 @@ nmODE-VJEPA outperforms SOTA models (OpenUS, USFM) across all cohorts:
 - **Efficiency:** Reading efficiency improved by **42%** ($P < 0.001$).
 - **Inter-reader Agreement:** Pairwise Cohen’s kappa increased from **0.60 to 0.70** with AI assistance.
 
-<div style={{display: 'flex', justifyContent: 'space-around', margin: '20px 0'}}>
-  <img src="/api/placeholder/400/300" alt="ROC Curves" />
-  <img src="/api/placeholder/400/300" alt="t-SNE Visualization" />
-</div>
+<Wide>
+<Picture src={fig2} alt="Clinical validation of scanning quality control" />
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Clinical validation of scanning quality control. Scanning performance was compared among unassisted non-physician operators (Group A), AI-assisted non-physician operators (Group A&rsquo;), and licensed physicians (Group D). (a, b) Overall score distributions for image quality and scanning completeness, respectively. (c, d) Non-inferiority analyses for image quality and scanning completeness, respectively. (e, f) Detailed sub-metric evaluations for image quality and scanning completeness, respectively.</p>
+</Wide>
+
+<Wide>
+<Picture src={fig3} alt="Comprehensive performance evaluation and feature representation" />
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Comprehensive performance evaluation and feature representation across multicenter cohorts. a, Comparison of balanced accuracy across the internal and four external validation cohorts (Ext1–Ext4). Bars represent the mean, and error bars denote standard deviation. The statistical significance (P value) between nmODE-VJEPA and the second-best method is reported. b, Macro-average receiver operating characteristic (ROC) curves with corresponding AUC values for each cohort. Insets provide a magnified view of the high-specificity region (FPR: 0–0.25). c, Radar charts illustrating model robustness (measured by balanced accuracy) across risk stratifications (Low, Medium, and High). The five axes represent the validation cohorts, showing consistent performance across varying clinical subgroups. d, UMAP visualizations of high-dimensional feature embeddings for all methods. Points are colored by risk level, demonstrating the superior class-separability and feature clustering achieved by nmODE-VJEPA compared to baseline models.</p>
+</Wide>
 
 ---
 
