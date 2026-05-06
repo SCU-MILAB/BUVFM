@@ -1,10 +1,13 @@
 import { promises as fs } from "fs";
-import { pdf } from "pdf-to-img";
 import sizeOf from "image-size";
+import "./dom-polyfill";
 
 export async function renderPDF(inputFilePath: string): Promise<ImageMetadata> {
   const inputFileName = inputFilePath.split("/").pop();
   const fullPath = `./src/pages/${inputFilePath}`;
+
+  // Dynamic import ensures dom-polyfill runs before pdfjs-dist loads
+  const { pdf } = await import("pdf-to-img");
 
   // Convert PDF to image with 4x scale (matching previous implementation)
   const document = await pdf(fullPath, {

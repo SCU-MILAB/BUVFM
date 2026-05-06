@@ -112,8 +112,30 @@ import CarouselSlide from "./components/CarouselSlide.astro";
 import Wide from "./components/Wide.astro";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/starwind/tabs";
 import { Comparison } from "./components/Comparison.tsx";
+import VideoGrid from "./components/VideoGrid.astro";
 
 import outside from "./assets/outside.mp4";
+import low1 from "./assets/1低风险.mp4"
+import mid1 from "./assets/1中风险.mp4"
+import hig1 from "./assets/1高风险.mp4"
+import nol1 from "./assets/1无病灶.mp4"
+import low2 from "./assets/2低风险.mp4"
+import mid2 from "./assets/2中风险.mp4"
+import hig2 from "./assets/2高风险.mp4"
+import nol2 from "./assets/2无病灶.mp4"
+import low3 from "./assets/3低风险.mp4"
+import mid3 from "./assets/3中风险.mp4"
+import hig3 from "./assets/3高风险.mp4"
+import nol3 from "./assets/3无病灶.mp4"
+import low4 from "./assets/4低风险.mp4"
+import mid4 from "./assets/4中风险.mp4"
+import hig4 from "./assets/4高风险.mp4"
+import nol4 from "./assets/4无病灶.mp4"
+import low5 from "./assets/5低风险.mp4"
+import mid5 from "./assets/5中风险.mp4"
+import hig5 from "./assets/5高风险.mp4"
+import nol5 from "./assets/5无病灶.mp4"
+
 import dogsDiffc from "./assets/dogs-diffc.png"
 import dogsTrue from "./assets/dogs-true.png"
 import dogsMsillm from "@/assets/dogs-msillm.jpg"
@@ -122,8 +144,7 @@ import fig2 from "./assets/fig2.png"
 import fig3 from "./assets/fig3.png"
 import arch from "./assets/arch.png"
 
-{/* <Video src={outside} /> */}
-
+<Wide>
 <HighlightedSection>
 
 ## Abstract
@@ -136,17 +157,32 @@ In retrospective validation, AIBS achieved **97.44%** risk stratification classi
 
 These results demonstrate that **AIBS holds great promise for large-scale breast cancer screening**.
 </HighlightedSection>
+</Wide>
 
-## Teaser: Standardizing Breast Ultrasound in Rural Areas
+## Standardizing Breast Ultrasound Screening
 
-<Wide>
+<p style="text-align: center; margin-top: 10px;">
+*这里放我们系统的流程动画：技师扫描 -> 端侧指控 -> 云端模型 -> 结果分析*
+</p>
+
+{/* <Wide>
 <Video src={outside} autoplay muted loop controls={false} />
 <p style="text-align: center; margin-top: 10px;">
 *AIBS Workflow: From real-time scanning quality control at the rural site to cloud-based BI-RADS risk stratification.*
 </p>
+</Wide> */}
+
+
+## Sample Screening Videos by Risk Level in Our Dataset
+<Wide>
+<VideoGrid
+  videos={[hig1, hig2, hig3, hig4, hig5, mid1, mid2, mid3, mid4, mid5, low1, low2, low3, low4, low5, nol1, nol2, nol3, nol4, nol5]}
+  rows={4}
+  cols={5}
+  rowLabels={["High Risk", "Mid Risk", "Low Risk", "No Lesion"]}
+  colLabels={["", "", "", "", ""]}
+/>
 </Wide>
-
-
 ---
 
 ## Study Design and AI Evaluation Workflow

@@ -1,0 +1,57 @@
+---
+interface Props {
+  videos: string[];
+  rows: number;
+  cols: number;
+  rowLabels: string[];
+  colLabels: string[];
+}
+
+const { videos, rows, cols, rowLabels = [], colLabels = [] } = Astro.props;
+
+// chunk flat array into rows×cols
+const grid: string[][] = [];
+for (let r = 0; r < rows; r++) {
+  grid.push(videos.slice(r * cols, (r + 1) * cols));
+}
+---
+
+<div class="not-prose my-6">
+  <div
+    class="grid"
+    style={`grid-template-columns: 2rem repeat(${cols}, 1fr); align-items: center; gap: 0;`}
+  >
+    <div></div>
+    {
+      colLabels.map((label) => (
+        <div class="text-center text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+          {label}
+        </div>
+      ))
+    }
+    {
+      grid.map((row, i) => (
+        <>
+          <div
+            class="flex items-center justify-center text-sm font-semibold text-zinc-700 dark:text-zinc-300"
+            style="writing-mode: vertical-rl;"
+          >
+            {rowLabels[i]}
+          </div>
+          {row.map((src) => (
+            <div class="aspect-video w-full overflow-hidden">
+              <video
+                class="h-full w-full object-cover"
+                src={src}
+                loop
+                playsinline
+                muted
+                autoplay
+              ></video>
+            </div>
+          ))}
+        </>
+      ))
+    }
+  </div>
+</div>
