@@ -1,5 +1,5 @@
 ---
-title: Large-scale real-world validation of an AI-driven ultrasound breast cancer screening system in rural settings
+title: Large-scale Real-world Validation of AI-driven Breast Cancer Ultrasound Screening in Rural Settings
 authors:
   - name: Chenzhong Wang
     notes: ["1","†"]
@@ -15,36 +15,46 @@ authors:
     notes: ["1"]
   - name: Jixiang Guo
     notes: ["1"]
-  - name: Qing Lyu
-    notes: ["1"]
-  - name: Xiaoying Hao
+  - name: Qing Lv
     notes: ["3"]
+  - name: Xiaoying Hao
+    notes: ["4"]
   - name: Jian Liu
-    notes: ["4"]
-  - name: Bo Gou
-    notes: ["4"]
-  - name: Chuanbo Xie
     notes: ["5"]
+  - name: Bo Gou
+    notes: ["1","5"]
+  - name: Chuanbo Xie
+    notes: ["1","4"]
   - name: Han Wang
     notes: ["6"]
-  - name: Jianping Gou
+  - name: Xiaofeng Qi
     notes: ["7"]
-  - name: Fanxin Zeng
-    notes: ["8"]
   - name: Xi Lin
-    notes: ["9"]
+    notes: ["8"]
   - name: Cuiju Yan
-    notes: ["9"]
+    notes: ["8"]
   - name: Huiling Xiang
     notes: ["9"]
   - name: Weihan Cao
     notes: ["10"]
-  - name: Lan Wu
-    notes: ["1"]
-  - name: Ling Liu
-    notes: ["1"]
-  - name: Shimin Hu
+  - name: Jianping Gou
     notes: ["11"]
+  - name: Fanxin Zeng
+    notes: ["12"]
+  - name: Dan Deng
+    notes: ["13"]
+  - name: Lan Wu
+    notes: ["14"]
+  - name: Ling Liu
+    notes: ["15"]
+  - name: Meihua Wan
+    notes: ["16"]
+  - name: Yi Chen
+    notes: ["17"]
+  - name: Songhai Zhang
+    notes: ["18"]
+  - name: Hong Qu
+    notes: ["19"]
   - name: Hao Chen
     notes: ["2","*"]
   - name: Zhang Yi
@@ -52,29 +62,45 @@ authors:
 conference: Nature
 notes:
   - symbol: "1"
-    text: Sichuan University
+    text: College of Computer Science, Sichuan University, Chengdu, China
   - symbol: "2"
-    text: The Hong Kong University of Science and Technology
+    text: Department of Computer Science and Engineering, The Hong Kong University of Science and Technology, Hong Kong, China
   - symbol: "3"
-    text: Zigong Maternal and Child Health Hospital
+    text: Breast Center, Clinical Research Center for Breast Diseases, West China Hospital, Sichuan University, Chengdu, China
   - symbol: "4"
-    text: Chengdu Medical College
+    text: Department of Ultrasound, Zigong Maternal and Child Health Care Hospital, Zigong, China
   - symbol: "5"
-    text: Zigong Health Commission
+    text: Department of Ultrasound, The First Affiliated Hospital of Chengdu Medical College, School of Clinical Medicine, Chengdu Medical College, Chengdu, China
   - symbol: "6"
-    text: Peking University
+    text: State Key Laboratory of Natural and Biomimetic Drugs, School of Pharmaceutical Sciences, Peking University, Beijing, China
   - symbol: "7"
-    text: Southwest University
+    text: Tencent TiMi Studio Group, TiMi L1 Studio, Chengdu, China
   - symbol: "8"
-    text: Dazhou Central Hospital
+    text: Department of Ultrasound, State Key Laboratory of Oncology in South China, Guangdong Provincial Clinical Research Center for Cancer, Sun Yat-sen University Cancer Center, Guangzhou, China
   - symbol: "9"
-    text: Sun Yat-sen University Cancer Center
+    text: Department of Radiology, State Key Laboratory of Oncology in South China, Guangdong Provincial Clinical Research Center for Cancer, Sun Yat-sen University Cancer Center, Guangzhou, China
   - symbol: "10"
-    text: Kunming Medical University
+    text: Department of Ultrasound, The First Affiliated Hospital of Kunming Medical University, Kunming, China
   - symbol: "11"
-    text: Tsinghua University
+    text: College of Computer and Information Science, Southwest University, Chongqing, China
+  - symbol: "12"
+    text: Department of Clinical Research Center, Dazhou Central Hospital, Dazhou, China
+  - symbol: "13"
+    text: Department of Ultrasonography, Chengdu BOE Hospital, Chengdu, China
+  - symbol: "14"
+    text: Department of Anesthesiology, West China Second University Hospital, Sichuan University, Chengdu, China
+  - symbol: "15"
+    text: Department of Neurology, West China Hospital, Sichuan University, Chengdu, China
+  - symbol: "16"
+    text: West China Center of Excellence for Pancreatitis, Institute of Integrated Traditional Chinese and Western Medicine, West China Hospital, Sichuan University, Chengdu, China
+  - symbol: "17"
+    text: Chengdu Aijia Technology Co., Ltd., Chengdu, China
+  - symbol: "18"
+    text: Department of Computer Science and Technology, Tsinghua University, Beijing, China
+  - symbol: "19"
+    text: School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu, China
   - symbol: "*"
-    text: Corresponding authors Hao Chen (jhc@ust.hk), Zhang Yi (zhangyi@scu.edu.cn)
+    text: "Corresponding authors: Zhang Yi (zhangyi@scu.edu.cn), Hao Chen (jhc@ust.hk)"
   - symbol: "†"
     text: These authors contributed equally to this work
 links:
@@ -98,7 +124,7 @@ theme: device
 favicon: favicon.svg
 
 # These keys are optional. If a link to your project page is in a Google search result, text message, or social media post, it will often appear as a "link preview card" based on its title, description, favicon, and thumbnail. After you publish your page, you can double check that these previews look right using [this tool](https://linkpreview.xyz/)
-description: Simple project page template for your research paper, built with Astro and Tailwind
+description: "AIBUS: Cloud-edge collaborative AI-driven breast cancer ultrasound screening system for rural settings"
 thumbnail: screenshot-light.png
 ---
 
@@ -139,12 +165,9 @@ import mid5 from "./assets/5中风险.mp4"
 import hig5 from "./assets/5高风险.mp4"
 import nol5 from "./assets/5无病灶.mp4"
 
-import dogsDiffc from "./assets/dogs-diffc.png"
-import dogsTrue from "./assets/dogs-true.png"
-import dogsMsillm from "@/assets/dogs-msillm.jpg"
 import fig1 from "./assets/fig1.png"
 import fig2 from "./assets/fig2.png"
-import fig3 from "./assets/fig3.png"
+
 import fig4 from "./assets/fig4.png"
 
 import arch from "./assets/arch.png"
@@ -154,13 +177,16 @@ import arch from "./assets/arch.png"
 
 ## Abstract
 
-Breast cancer is the most commonly diagnosed cancer among women, and early detection is essential for improving outcomes. 
-Ultrasound is particularly important for screening Asian populations with dense breasts, but reliance on physician-operated acquisition and interpretation limits scalability, especially in underserved regions.
-Here we present AIBS, an artificial intelligence-enabled system for large-scale breast ultrasound screening. 
-AIBS combines two components for scalable screening: a real-time quality-control module supporting standardized acquisition by non-physician operators, and a video-based risk-stratification model built on the first breast ultrasound video foundation model (BUVFM).
-BUVFM was self-supervised pretrained on 423,493 frames and 84,021 video sequences, then fine-tuned for BI-RADS risk stratification.
-Coupled with portable ultrasound devices, AIBS enables a hospital-independent screening workflow that expands access to population-level screening.
-With AI-assisted quality control, non-physician operators achieved scanning performance non-inferior to that of trained ultrasound physicians (8.00 versus 8.18; lower bound of the 95\% confidence interval, -0.374; non-inferiority $P=0.079$). In retrospective validation, AIBS outperformed state-of-the-art models for risk stratification in both internal and external cohorts. On the internal validation cohort, it achieved a macro sensitivity of 95.42\% and a macro specificity of 95.60\%; across the 11 external validation cohorts, macro sensitivity ranged from 94.11\% to 99.39\%, and macro specificity ranged from 94.28\% to 99.39\%. In a video-based reader study involving 16 ultrasound physicians, standalone AIBS showed stronger risk-stratification performance than all readers in the independent setting, while AI assistance improved reader interpretation by 4.18 percentage points and reduced interpretation time by 42.85\%. In a prospective study across 4 screening cohorts ($n=1,282$), the average screening time was 94 s per case and the average screening cost was 4.19 CNY per case (4.48x lower than traditional). These findings support AIBS as a scalable and standardized approach to breast ultrasound screening in resource-constrained settings.
+Breast cancer is the most common cancer among women worldwide, and early detection through effective screening can significantly improve clinical outcomes. 
+Breast cancer ultrasound screening is particularly valuable for women with dense breasts, which are common in Asian populations, yet the reliance on physician-operated acquisition and interpretation largely limits its scalability, especially in underserved regions.
+Here we present a cloud-edge collaborative Artificial Intelligence-driven Breast cancer Ultrasound Screening (AIBUS) system with portable devices for decentralized and standardized screening in rural settings.
+It integrates an edge-deployed real-time scanning quality control module that provides operator-facing acquisition guidance, along with a cloud-side risk stratification module for consistent interpretation.
+These AI components were developed from a self-supervised breast ultrasound video foundation model (BUVFM) built in this study, which is pre-trained on 84,021 ultrasound video sequences and 423,493 separate frames from real-world breast cancer ultrasound screening.
+In a volunteer scanning study, AI-assisted non-physician operators achieved scanning performance non-inferior to that of experienced ultrasound physicians.
+In retrospective validation, the cloud-based module consistently outperformed representative deep-learning models, achieving a macro-sensitivity of 95.42\% and macro-specificity of 95.60\% in the internal validation cohort, and demonstrating robust generalization across 11 heterogeneous external cohorts with macro-sensitivities ranging from 94.11\% to 99.39\% and macro-specificities ranging from 94.28\% to 99.39\%.
+In a video-based reader study involving 12 physicians experienced in breast ultrasound interpretation, standalone AIBUS outperformed all unaided readers, while AI assistance improved readers' macro-sensitivity and macro-specificity by 6.79\% and 1.96\%, respectively, and reduced interpretation time by 29.68\%.
+In the prospective study conducted across 11 screening sites ($n=3,528$), AIBUS completed examinations in an average time of nearly two minutes and maintained an overall macro-sensitivity of 90.95\% and macro-specificity of 96.90\%.
+These findings suggest that AIBUS can significantly reduce dependence on specialist hospitals and experienced ultrasound physicians, and establish a new paradigm for population-scale, high-quality screening. This system is promising for nationwide large-scale breast cancer screening in rural settings.
 </HighlightedSection>
 
 
@@ -169,7 +195,7 @@ With AI-assisted quality control, non-physician operators achieved scanning perf
 {/* <Wide>
 <Video src={outside} autoplay muted loop controls={false} />
 <p style="text-align: center; margin-top: 10px;">
-*AIBS Workflow: From real-time scanning quality control at the rural site to cloud-based BI-RADS risk stratification.*
+*AIBUS Workflow: From real-time scanning quality control at the rural site to cloud-based BI-RADS risk stratification.*
 </p>
 </Wide> */}
 
@@ -191,40 +217,48 @@ With AI-assisted quality control, non-physician operators achieved scanning perf
 <Wide>
 <Picture src={fig1} alt="Overview of study design and AI evaluation workflow" />
 </Wide>
-<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Overview of study design and AI evaluation workflow. a, b, Participant demographics and study cohorts across screening centers. c, Self-supervised pre-training framework (nmODE-JEPA) using a context encoder to predict latent features from masked regions. d, Real-time AI pipeline for ultrasound videos, enabling continuous lesion localization and dynamic risk stratification (low, mid, high-risk). e, Scanning quality control validated via expert scoring of volunteer scans by physicians and non-physicians. f, Retrospective internal (3 sites, n = 790) and external (4 sites, n = 1, 080) validation of diagnostic accuracy. g, Crossover study (500 videos) evaluating 16 readers with and without AI (4-week washout) to assess diagnostic performance. h, Prospective real-world validation across 23 sites (n = 11, 485), demonstrating clinical robustness and generalizability.</p>
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Overview of study design and AI evaluation workflow.</p>
 
 ---
 
-## The Architecture of AIBS
+## The Architecture of AIBUS
 
-AIBS is a cloud-edge collaborative breast ultrasound screening system designed to reconcile two competing demands: the need for immediate feedback during acquisition and the need for computationally intensive video-level analysis. The system comprises two tightly coupled components operating in parallel:
+AIBUS is a cloud–edge collaborative system designed to support standardized breast ultrasound video acquisition and BI-RADS-based risk stratification using portable ultrasound devices. The system consists of an edge-side quality control module and a cloud-side BI-RADS-based risk stratification module. Both are built upon the breast ultrasound video foundation model (BUVFM) developed in this study, which serves as the backbone of the cloud-side module and as the teacher model for distilling spatiotemporal knowledge into lightweight edge-side models.
 
-### <SmallCaps>1. Real-Time Quality-Control Module (Edge-Side)</SmallCaps>
-- **Device:** Portable Ultrasound Devices.
-- **Function:** Processes continuous video streams in real-time to provide immediate feedback on image quality and scan completeness. 
-- **Guidance:** Displays visual prompts and warnings on the device interface, allowing non-physician operators to dynamically adjust probe contact, imaging depth, sweep speed, and gain settings for standardized scanning.
+### <SmallCaps>1. Edge-Side Quality Control Module</SmallCaps>
 
-### <SmallCaps>2. Staged Diagnostic Workflow</SmallCaps>
-The diagnostic pipeline distributes inference across edge-side and cloud-side environments based on latency and computational requirements. It is organized into a hierarchical three-stage pipeline:
+Running on portable ultrasound devices, this module performs two complementary functions in real time during scanning:
 
-### **Stage 1: Edge-Side Rapid Filtering (Valid Frame Identification)**
-- **Function:** A lightweight cascade model continuously sieves raw video streams to identify whether incoming frames or short temporal clips contain suspicious lesion-related content. It operates with low latency to provide immediate front-end response.
+**Acquisition Guidance Component.** Provides real-time operator-facing feedback on four image quality factors — probe contact, imaging depth, scanning speed, and gain setting — plus scan completeness via a trajectory display:
 
-### **Stage 2: Edge-Side Lesion Localization (Key-Clip Extraction)**
-- **Function:** Triggered when Stage 1 predictions exceed predefined probability thresholds. This model localizes suspicious lesion regions and extracts key diagnostic clips, selecting lesion-positive clips for downstream analysis while reducing cloud upload bandwidth.
+- **Probe contact:** Evaluated by adaptive greyscale histogram analysis to detect acoustic shadow artefacts from incomplete skin coupling.
+- **Imaging depth:** Assessed by a lightweight semantic segmentation model that generates real-time binary masks of the glandular region and pectoralis major muscle to identify insufficient depth.
+- **Scanning speed:** Monitored via inter-frame similarity from hashing-based representations and Hamming distances; abrupt drops indicate excessive transducer motion.
+- **Gain setting:** Obtained from the hardware interface and compared against a predefined acceptable range.
+- **Scan completeness:** A real-time trajectory display visualizes probe movement over a standardized breast surface model (constructed in Blender), guiding a quadrant-by-quadrant sweep pattern. Trajectory updates are gated by ultrasound image similarity to suppress false displacement from stationary probe tilting.
 
-### **Stage 3: Cloud-Side Risk Stratification (Video Foundation Model)**
-- **The Core Model:** A breast ultrasound video foundation model fine-tuned for downstream classification.
-- **Function:** Handles computationally intensive high-precision temporal interpretation. Uploaded suspicious clips undergo further video-level lesion confirmation while preserving vital video-level context.
-- **Output:** Generates the final examination-level risk categorization (**Low, Medium, or High Risk**).
+These signals are converted into visual prompts and warnings, allowing non-physician operators to dynamically adjust acquisition parameters for standardized whole-breast scanning.
 
-**Summary of Collaboration:** By allocating low-latency filtering and quality control to the edge, and high-precision temporal interpretation to the cloud, AIBS ensures real-time responsiveness during acquisition while delivering expert-level risk assessment at the back-end.
+**Representative Clip Selection Component.** Operates in parallel to retain informative clips for cloud analysis while reducing redundant data transfer. It uses a two-stage workflow:
+
+1. **Frame validity assessment:** MobileNetV3 classifies each incoming frame as interpretable or invalid; invalid frames are discarded.
+2. **Lesion candidate detection:** A YOLO11-based detector localizes suspicious findings in valid frames and produces confidence scores.
+
+Both models were optimized via task-specific supervision and feature-level teacher–student distillation, with the pretrained BUVFM serving as the teacher. When lesion detection persists for eight consecutive frames, a lesion-positive 60-frame (3-second) clip is saved; if no lesion is detected for eight consecutive seconds, a lesion-negative clip is saved. For each examination, up to six clips are uploaded to the cloud — three from each breast, selected by highest lesion-presence confidence.
+
+### <SmallCaps>2. Cloud-Side BI-RADS Risk Stratification Module</SmallCaps>
+
+The cloud-side module processes representative clips uploaded from the edge. It is initialized from the pretrained BUVFM backbone and fine-tuned end-to-end with an attention-based pooling and classification head. For each input clip, the video encoder generates spatiotemporal embeddings, which are aggregated by attentive pooling into a compact clip-level representation and mapped by a linear output layer to **Low**, **Medium**, or **High** risk categories. During fine-tuning, static ultrasound images are converted into pseudo-video clips by temporal replication, enabling both static and dynamic data to be used within the same video backbone. The highest predicted risk category across all clips from a participant's examination is taken as the participant-level result.
+
+### <SmallCaps>3. Breast Ultrasound Video Foundation Model (BUVFM)</SmallCaps>
+
+BUVFM was pretrained on 84,021 unlabelled dynamic video sequences (4,957,239 frames) and 423,493 static ultrasound frames via a self-supervised objective that captures spatiotemporal consistency across probe sweeps and imaging planes. Rather than reconstructing raw pixels — which can overemphasize speckle noise and acoustic shadowing — BUVFM adopts the Joint-Embedding Predictive Architecture (JEPA), which performs prediction in latent representation space. To better model the continuous latent changes induced by manual probe sweeps, we introduced the neural memory ordinary differential equation (nmODE) into the JEPA predictor, reformulating the activation process as a continuous dynamical system. Static frames are converted into pseudo-video clips through temporal replication so that both modalities share a common video backbone. The resulting representations are stable, noise-tolerant, and capture the dynamic nature of breast ultrasound scanning.
 
 
 <Wide>
 <Picture src={arch} alt="Model Architecture" />
 </Wide>
-<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Model Architecture. The framework comprises self-supervised pre-training (left) and downstream clinical adaptation (right). The foundation model is pre-trained via video contrastive learning on a large-scale unlabeled dataset (&gt;80,000 videos, &gt;400,000 images). It integrates a 3D convolution encoder, a momentum-updated teacher-student Vision Transformer (ViT), and an nmODE predictor to learn robust spatiotemporal representations optimized by content and prediction losses. Through distillation or fine-tuning, the model adapts to three progressive stages: Stage I (Image-based filtering) leverages Mobile-ODE and YOLO-11 for frame validation and lesion detection; Stage II (Video-based filtering) utilizes ResNet50 and nmODE to model temporal evolution for video-level lesion filtering; Stage III (Risk stratification) applies fully supervised fine-tuning on labeled datasets to classify lesion severity into Low, Mid, and High clinical risk categories.</p>
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Model Architecture. BUVFM pre-training via JEPA + nmODE (left) and downstream clinical adaptation through three progressive stages (right).</p>
 
 ---
 
@@ -236,50 +270,94 @@ Our system is built and validated on a massive scale of real-world clinical data
 
 | Dataset Category | Scope | Scale |
 | :--- | :--- | :--- |
-| **Pre-training Corpus** | Unlabeled Multicenter Data | **6.3M** items (5.8M video frames + 507k static images) |
-| **SCUBC Cohort** | Development & Validation | **22,534** videos from **9,780** patients |
-| **Prospective Cohort** | Nationwide Rural Deployment | **11,485** exams across **23 sites** (6 provinces) |
-| **QC Validation** | Scanning Standardization | 12 operators vs. senior physicians |
+| **Pre-training Corpus** | Unlabeled Multicenter Data | **507,514** items (84,021 video sequences + 423,493 static frames) |
+| **Development Cohort** | Training & Fine-tuning | **7,523** participants from **12** screening cohorts |
+| **Retrospective Validation** | Internal + 11 External Cohorts | **12,025** participants total |
+| **Prospective Cohort** | Real-world Deployment | **3,528** exams across **11 sites** (2 provinces) |
+| **QC Validation** | Scanning Standardization | 12 non-physician operators vs. 8 licensed physicians |
 
 ---
 
 ## Experimental Results
 
-### **Quantitative Performance**
-nmODE-VJEPA outperforms SOTA models (OpenUS, USFM) across all cohorts:
+### Retrospective Validation
 
-- **Internal Validation (N=790):** **98.23% Accuracy**, 0.9956 Macro AUC.
-- **External Validation (N=1,082):** Accuracy up to **100%** (Ext1) and **96.15%** (Ext2).
-- **Prospective Real-world (N=11,485):** **91.3% Patient-level Accuracy**; No high-risk case was downgraded to low-risk.
+AIBUS-Cloud was evaluated on one internal validation cohort ($n=1{,}170$) and 11 external validation cohorts ($n=10{,}855$ total) against representative state-of-the-art models, including OpenUS, USFM, EchoCare, UltraFedFM (ultrasound foundation models), VideoMAE v2, VideoVAE+ (video self-supervised methods), and USCL (convolutional baseline). All models were fine-tuned under the same BI-RADS-based three-class risk stratification setting.
 
-### **Clinical Utility & Efficiency**
-- **Non-Inferiority:** AI-assisted non-physicians achieved image quality scores comparable to professional sonographers (8.00 vs 8.16).
-- **Efficiency:** Reading efficiency improved by **42%** ($P < 0.001$).
-- **Inter-reader Agreement:** Pairwise Cohen’s kappa increased from **0.60 to 0.70** with AI assistance.
+
+
+| **Internal Validation** | Accuracy | Balanced ACC | Macro-Sens. | Macro-Spec. | Macro-AUC |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **AIBUS-Cloud (Ours)** | **90.17** | **95.42** | **95.42** | **95.60** | **0.9849** |
+| VideoMAE v2 | 77.52 | 84.23 | 84.23 | 89.35 | 0.9378 |
+| EchoCare | 71.79 | 74.70 | 74.70 | 85.34 | 0.8342 |
+| OpenUS | 66.41 | 70.29 | 70.29 | 82.43 | 0.8404 |
+| VideoVAE+ | 71.20 | 76.59 | 76.59 | 85.93 | 0.8568 |
+| USFM | 61.88 | 62.16 | 62.16 | 80.97 | 0.7784 |
+| USCL | 62.65 | 63.27 | 63.27 | 81.79 | 0.8145 |
+| UltraFedFM | 66.07 | 60.75 | 60.75 | 80.98 | 0.7914 |
+
+
+AIBUS-Cloud consistently outperformed all compared methods across all metrics ($P<0.001$ for all pairwise comparisons). Across the 11 external validation cohorts, AIBUS-Cloud maintained robust generalization with macro-AUC ranging from **0.9800 to 0.9999**, and achieved an aggregated accuracy of **95.04%** and macro-AUC of **0.9958** on the combined external set ($n=10{,}855$).
 
 <Wide>
 <Picture src={fig2} alt="Comprehensive performance evaluation and feature representation across multicenter cohorts" />
 </Wide>
-<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Comprehensive performance evaluation and feature representation across multicenter cohorts. a, Radar charts comparing macro-averaged classification metrics, including Macro Sensitivity, Macro Specificity, and Macro Precision. The twelve axes represent the internal validation cohort and eleven external validation cohorts (Ext 1–Ext 11), demonstrating the models’ generalization capabilities across varied multicenter data distributions. b, Radar charts illustrating model robustness across clinical risk stratifications (Low, Medium, and High Risk). Performance is measured by class-level AUC across the same twelve validation cohorts, showing the consistency of BUVFM across different clinical subgroups. c, UMAP visualizations of high-dimensional feature embeddings for all evaluated methods. Points are colored by risk level, demonstrating the superior class-separability and distinct feature clustering achieved by BUVFM compared to baseline models.</p>
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Comprehensive performance evaluation across multicenter cohorts. a, Macro-averaged metrics across internal and 11 external validation cohorts. b, Class-wise AUC by risk category. c, UMAP feature embeddings coloured by risk level.</p>
+
+---
+
+### Reader Study
+
+Twelve ultrasound physicians evaluated 564 breast ultrasound video cases in a crossover design with a 4-week washout. Readers were stratified by cumulative breast ultrasound reading volume into junior ($\leq5{,}000$ cases) and senior ($>5{,}000$ cases) groups.
+
+
+
+| **Reader Study** | Macro-Sens. (%) | Macro-Spec. (%) | Macro-Prec. (%) | Time (s) | Kappa |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Junior — Unaided | 74.16 | 92.00 | 75.28 | 35.2 | — |
+| **Junior — AI-Assisted** | **82.40$^{**}$** | **94.47$^{*}$** | **80.23$^{**}$** | **26.9$^{*}$** | — |
+| Senior — Unaided | 78.06 | 93.37 | 77.30 | 25.1 | — |
+| **Senior — AI-Assisted** | **82.85$^{*}$** | **94.61$^{*}$** | **80.20$^{\,ns}$** | **14.5$^{**}$** | — |
+| All Readers — Unaided | 75.79 | 92.57 | 76.12 | 31.0 | 0.682 |
+| **All Readers — AI-Assisted** | **82.58$^{***}$** | **94.53$^{**}$** | **80.22$^{***}$** | **21.7$^{***}$** | **0.776** |
+| **Standalone AI** | **87.28** | **96.16** | **81.30** | — | — |
+
+AI assistance improved risk stratification across all readers, with the largest sensitivity gains in junior readers. Standalone AIBUS outperformed all unaided readers. Reading time decreased substantially in both groups, and inter-reader agreement improved (Cohen’s $\kappa$ from 0.682 to 0.776).
+
+<div style="font-size: 0.8rem; color: var(--color-zinc-500); margin-top: -0.5rem;">
+$^{*}P<0.05$, $^{**}P<0.01$, $^{***}P<0.001$; $^{\,ns}$ not significant. Statistical comparisons via two-tailed paired $t$-tests.
+</div>
+
+---
+
+### Prospective Real-World Deployment
+
+AIBUS was prospectively deployed at 11 screening sites across Sichuan and Gansu provinces ($n=3{,}528$ participants, 21,168 breast ultrasound videos). Operators used portable devices with real-time AI guidance; representative clips were automatically selected on the edge and analysed by the cloud-side module.
+
+
+
+| **Prospective Deployment** | Participants | Accuracy (%) | Macro-Sens. (%) | Macro-Spec. (%) | Macro-AUC | Mean Screening Time |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Overall** | 3,528 | **97.51** | **90.95** | **96.90** | **0.9913** | 1 min 55 s |
+| Sichuan | 2,723 | 97.94 | 92.05 | 96.35 | — | — |
+| Gansu | 805 | 96.02 | 86.14 | 97.60 | — | — |
+
+No significant regional differences were observed in macro-sensitivity, macro-specificity, or macro-precision (all $P>0.05$). Performance remained stable across age groups, healthcare levels (city, town, village), and operators (all $P>0.05$ for sensitivity and specificity). The mean screening time of 1 min 55 s per participant supports high-throughput deployment in resource-constrained settings.
 
 <Wide>
-<Picture src={fig3} alt="Reader study performance and behavior analysis." />
+<Picture src={fig4} alt="Prospective validation of AIBUS in real-world settings across provinces and screening sites." />
 </Wide>
-<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Reader study performance and behavior analysis. a–f, Diagnostic performance and efficiency of 16 individual readers (left columns) and reader subgroups (right columns). Metrics include macro-averaged sensitivity (a, b), specificity (c, d), and precision (e, f), comparing independent reading (solid bars) and AI-assisted reading (hatched bars), alongside standalone AI performance (dashed horizontal lines). g, h, Corresponding reading times per case for individuals (g) and subgroups (h). For subgroup analysis, readers were categorized into Junior (≤10 years experience) and Senior (>10 years experience) groups. i, Transitions in reader behavior under AI assistance, categorized by the initial correctness of both the human reader and the AI system (e.g., AI-corrected, AI-misled). j, Error contribution analysis across low-, medium-, and high-risk BI-RADS categories for Junior and Senior groups. k, Heatmap of reader agreement (Cohen’s κ), displaying intra-reader consistency (blue, diagonal; assisted vs. independent) and inter-reader agreement (red, off-diagonal; assisted vs. assisted). Error bars represent the standard deviation (s.d.) derived from 1,000 bootstrap iterations; P values were calculated using two-tailed paired t-tests.</p>
-
-<Wide>
-<Picture src={fig4} alt="Prospective validation and real-world evaluation of the AI screening system across sequential cohorts. " />
-</Wide>
-<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);"> Prospective validation and real-world evaluation of the AI screening system across sequential cohorts. (a–c) Diagnostic performance of the proposed AI against baseline models, measured by (a) Macro-Sensitivity, (b) Macro-Specificity, and (c) Macro-Precision across four prospective phases (Cohort 1–4) and the overall cohort. Statistical significance is annotated for top-performing comparisons. (d) Average screening time (MM:SS) per patient, stratified by clinical risk (High, Medium, Low) to illustrate workflow efficiency across sequential cohorts. (e) Real-world economic analysis showing average screening cost per capita (RMB). Total expenses are broken down into logistics, consumables, equipment depreciation, and labor to highlight the economic sustainability and scaling efficiency of the program.</p>
+<p style="text-align: center; font-size: 0.875rem; margin-top: 0.5rem; color: var(--color-zinc-500);">Prospective validation of AIBUS in real-world settings. a, Performance across provinces and screening sites. b–d, Subgroup analysis by age, healthcare level, and operator. e–f, Screening duration distributions by risk category and cohort.</p>
 
 <div style="display:none"> 
 ---
 ## BibTeX citation
 ```bibtex
-@article{wang2026nmode,
-  title={nmODE-V: ...},
-  author={Zhang, San and Li, Si...},
-  journal={Nature},
+@article{wang2026aibus,
+  title={Large-scale Real-world Validation of AI-driven Breast Cancer Ultrasound Screening in Rural Settings},
+  author={Wang, Chenzhong and He, Tao and Wang, Xi and Hu, Junjie and Wang, Jianyong and Li, Xiang and Guo, Jixiang and Lv, Qing and Hao, Xiaoying and Liu, Jian and Gou, Bo and Xie, Chuanbo and Wang, Han and Qi, Xiaofeng and Lin, Xi and Yan, Cuiju and Xiang, Huiling and Cao, Weihan and Gou, Jianping and Zeng, Fanxin and Deng, Dan and Wu, Lan and Liu, Ling and Wan, Meihua and Chen, Yi and Zhang, Songhai and Qu, Hong and Chen, Hao and Zhang, Yi},
+  journal={},
   year={2026}
 }
 ```
